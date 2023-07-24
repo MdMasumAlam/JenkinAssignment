@@ -4,7 +4,7 @@ pipeline{
                         notifyEmail = "mdmasumalam0413@gmail.com"
                           }
         tools{
-              maven 'MAVEN-HOME'
+              maven 'maven_home'
               }
         triggers{
                 cron('0 06 * * *')
@@ -20,7 +20,7 @@ pipeline{
                           bat "mvn clean"
                           }
                                       }
-                stagec("unit test") {
+                stage("unit test") {
                     steps {
                           bat "mvn test"
                             }
