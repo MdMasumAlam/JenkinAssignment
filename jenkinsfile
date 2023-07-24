@@ -4,7 +4,7 @@ pipeline{
                         notifyEmail = "mdmasumalam0413@gmail.com"
                           }
         tools{
-              maven "Maven 3.6.3"
+              Maven "maven_home"
               }
         triggers{
                 cron('0 06 * * *')
